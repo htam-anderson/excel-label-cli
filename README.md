@@ -6,7 +6,7 @@
 | |____ >  < (_|  __/ | | (_| | |_) |  __/ |
 |______/_/\_\___\___|_|_|\__,_|_.__/ \___|_|
 
-Version: v0.~~~~1
+Version: v0.1
 Usage:
   excellabel  label <path> [options] [--][options] [--]
 
@@ -24,19 +24,15 @@ Options:
 ---
 
 # Excel Labeling CLI
-
-- This CLI currently using on Window so follow the description above we have and exmaple of usage
+- This is the CLI help to label multiple excel files by adding an label image over the sheet.
+- This CLI currently using on Window so follow the description above lets jump to the usage example
 
 ## Default Usage
-
 - Open you powershell and type
-
 ```
 $ php excellabel  label "C:\Users\excel-files-folder"
 ```
-
 - Ouput
-
 ```
 _____________________________________________________________________________
 YOUR CONFIGURATIONS:
@@ -54,15 +50,11 @@ _____________________________________________________________________________
 ```
 
 ## Options Usage
-
 - Open you powershell and type
-
 ```
 $ php excellabel  label "C:\Users\excel-files-folder" -p D6 -i "C:\Users\test-image.jpg" -s 80 -o y
 ```
-
 - Output
-
 ```
 _____________________________________________________________________________
 YOUR CONFIGURATIONS:
@@ -80,6 +72,5 @@ _____________________________________________________________________________
 ```
 
 ## Reference
-
 - [Laravel-Zero](https://laravel-zero.com/)
 - [phpspreadsheet](https://phpspreadsheet.readthedocs.io/en/latest/)
