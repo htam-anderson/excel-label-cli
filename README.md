@@ -25,12 +25,13 @@ Options:
 
 # Excel Labeling CLI
 - This is the CLI help to label multiple excel files by adding an label image over the sheet.
-- This CLI currently using on Window so follow the description above lets jump to the usage example
+- To use this CLI please download [this file](https://github.com/htam-anderson/excel-label-cli/blob/master/builds/excellabel).
+- This CLI currently using on Window so follow the description above lets jump to the usage example.
 
 ## Default Usage
-- Open you powershell and type
+- Open you powershell in where you just download the file and type:
 ```
-$ php excellabel  label "C:\Users\excel-files-folder"
+$ php excellabel label "C:\Users\excel-files-folder"
 ```
 - Ouput
 ```
@@ -44,15 +45,16 @@ YOUR CONFIGURATIONS:
 _____________________________________________________________________________
 PROCESSING YOUR FILES:
 ⇛  START  ⇚
-▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪
+▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪
 ⇛  FINISH  ⇚
 _____________________________________________________________________________
 ```
+- Then open the folder output in the excel folder you just input earlier to see the result.
 
 ## Options Usage
-- Open you powershell and type
+- Open you powershell in where you just download the file and type:
 ```
-$ php excellabel  label "C:\Users\excel-files-folder" -p D6 -i "C:\Users\test-image.jpg" -s 80 -o y
+$ php excellabel label "C:\Users\excel-files-folder" -p D6 -i "C:\Users\test-image.jpg" -s 80 -o y
 ```
 - Output
 ```
@@ -66,10 +68,11 @@ YOUR CONFIGURATIONS:
 _____________________________________________________________________________
 PROCESSING YOUR FILES:
 ⇛  START  ⇚
-▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪
+▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪
 ⇛  FINISH  ⇚
 _____________________________________________________________________________
 ```
+- Then open your excel file to see the result.
 
 ## Reference
 - [Laravel-Zero](https://laravel-zero.com/)
