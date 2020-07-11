@@ -24,8 +24,9 @@ Options:
 ---
 
 # Excel Labeling CLI
-- This is the CLI help to label multiple excel files by adding an label image over the sheet.
-- To use this CLI please download [this file](https://github.com/htam-anderson/excel-label-cli/blob/master/builds/excellabel).
+- This is the CLI help to label multiple excel files by input a folder where contains you excel files.
+- It will adding an label image over the sheet, so it will not changing anything from the original file.
+- To use this CLI, please download [this](https://github.com/htam-anderson/excel-label-cli/blob/master/builds/excellabel).
 - This CLI currently using on Window so follow the description above lets jump to the usage example.
 
 ## Default Usage
