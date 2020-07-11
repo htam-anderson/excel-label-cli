@@ -36,7 +36,7 @@ class Label extends Command
     {
         $initValue = [
             'labelPosition' => $this->option('label-position') ? $this->option('label-position') : 'A1',
-            'labelPath' => $this->option('label-path') ? $this->option('label-path') : './images/label-internal-use-only.jpg',
+            'labelPath' => $this->option('label-path') ? $this->option('label-path') : base_path().'/images/label-internal-use-only.jpg',
             'labelHeight' => $this->option('label-height') ? $this->option('label-height') : 50,
             'override' => $this->option('override') ? $this->option('override') : 'n',
         ];

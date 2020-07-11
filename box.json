@@ -6,8 +6,14 @@
         "config",
         "vendor"
     ],
+    "directories-bin": [
+        "images"
+    ],
     "files": [
         "composer.json"
+    ],
+    "files-bin": [
+        "images/label-internal-use-only.jpg"
     ],
     "exclude-composer-files": false,
     "compression": "GZ",
