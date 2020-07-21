@@ -46,6 +46,14 @@ class Handler extends ExceptionHandler
             print('The Output folder already exist! Please remove it and try again.');
             die;
         }
+
+        if (Str::contains($exception->getMessage(),['Formula Error'])){
+            echo PHP_EOL;
+            print('Your excel files have Formular Error:');echo PHP_EOL;
+            print($exception->getMessage());echo PHP_EOL;
+            print('Please recheck it and try again.');echo PHP_EOL;
+            die;
+        }
     
         parent::report($exception);
     }

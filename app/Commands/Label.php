@@ -62,10 +62,11 @@ class Label extends Command
         $this->info(json_decode('"\u21DB"').'  START  '.json_decode('"\u21DA"'));
         $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xlsx();
         foreach($arrExcelFiles as $i => $singleFile) {
-            $spreadsheet = $reader->load($singleFile, $initValue);
+            $spreadsheet = $reader->load($singleFile);
             $newSpreadsheet = $this->editSingleSheet($spreadsheet, $initValue, $repath, $singleFile);
-
-            $writer = \PhpOffice\PhpSpreadsheet\IOFactory::createWriter($newSpreadsheet, "Xlsx");
+            
+            $writer = new \PhpOffice\PhpSpreadsheet\Writer\Xlsx($newSpreadsheet);
+            // $writer->setPreCalculateFormulas(false);
 
             if ($initValue['override'] == 'y') {
                 $writer->save($repath."\\".pathinfo($singleFile)['basename']);
